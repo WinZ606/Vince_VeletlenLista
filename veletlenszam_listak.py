@@ -65,11 +65,11 @@ def feladat5_2(dobasok):
     i = 0
     dobas = [0,0,0,0,0,0]
     while i < len(dobasok):
-        dobas[i] += 1
+        dobas[dobasok[i]-1] += 1
         i += 1
     for p in range(0,6,1):
+        print(f"{p+1}. dobtunk {dobas[p]} alkalommal")
         p += 1
-        print(f"{p}. dobtunk {dobas[i]} alkalommal")
 
 def feladat5_3(dobasok, szam):
     i = 0
